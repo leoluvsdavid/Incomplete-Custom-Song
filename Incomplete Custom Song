@@ -1,0 +1,77 @@
+# Welcome to Sonic Pi
+live_loop :kendrickdrums do
+  kendrick_drums = "C:/Users/leo_ashley/Downloads/tomp3.cc - Beat Cover  Sing About Me Im Dying of Thirst.wav"
+  sample kendrick_drums, amp: 3
+  sleep 7
+end
+
+live_loop :kendrick, delay: 2.5 do
+  use_synth :piano
+  play :a, sustain: 3
+  use_synth :piano
+  play :a, sustain: 3
+  play :cs, sustain: 3
+  play :e, sustain: 3
+  play :gs, sustain: 3
+  sleep 2
+  use_synth :piano
+  play :ds, sustain: 3
+  play :as, sustain: 3
+  play :cs, sustain: 3
+  play :gs, sustain: 3
+  play :fs
+  sleep 0.4
+  play :cs
+  sleep 0.4
+  play :gs
+  play :cs, sustain: 3
+  play :e, sustain: 3
+  play :b, sustain: 3
+  play :ds, sustain: 3
+  sleep 1.5
+  play :bs
+  play :e, sustain: 3
+  play :cs, sustain: 3
+  play :ds, sustain: 3
+  play :gs, sustain: 3
+  sleep 0.4
+  play :a4
+  sleep 0.4
+  play :b
+  play :as, sustain: 3
+  play :b, sustain: 3
+  play :cs, sustain: 3
+  play :gs, sustain: 3
+  sleep 0.4
+  play :cs
+  play :b, sustain: 3
+  play :cs, sustain: 3
+  play :ds, sustain: 3
+  play :fs, sustain: 3
+  sleep 1.5
+  play :ds
+  play :cs, sustain: 3
+  play :gs, sustain: 3
+  play :ds, sustain: 3
+  play :es, sustain: 3
+  sleep 1.5
+  play :as
+  play :gs, sustain: 3
+  play :as, sustain: 3
+  play :ds, sustain: 3
+  play :fs, sustain: 3
+  sleep 1.4
+  play :gs
+  play :gs, sustain: 3
+  play :a, sustain: 3
+  play :bs, sustain: 3
+  play :e, sustain: 3
+  play :fs, sustain: 3
+  sleep 0.4
+  play :fs
+  sleep 0.4
+  play :b
+  sleep 0.4
+end
+k_music= "C:/Users/leo_ashley/Downloads/Kendrick Lamar - Sing About Me (Without Drums) Instrumental (1).wav"
+sample k_music
