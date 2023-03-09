@@ -5,7 +5,7 @@ live_loop :kendrickdrums do
   sleep 7
 end
 
-live_loop :kendrick, delay: 2.5 do
+define :kendrickmusic do
   use_synth :piano
   play :a, sustain: 3
   use_synth :piano
@@ -71,7 +71,10 @@ live_loop :kendrick, delay: 2.5 do
   play :fs
   sleep 0.4
   play :b
-  sleep 0.4
 end
-k_music= "C:/Users/leo_ashley/Downloads/Kendrick Lamar - Sing About Me (Without Drums) Instrumental (1).wav"
-sample k_music
+
+live_loop :kendrick, delay: 2.5 do
+  with_fx :level do
+    kendrickmusic
+  end
+end
