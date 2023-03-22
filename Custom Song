@@ -1,10 +1,10 @@
-# Welcome to Sonic Pi
+# Sing About Me, I'm Dying of Thirst
 live_loop :kendrickdrums do
   kendrick_drums = "C:/Users/leo_ashley/Downloads/tomp3.cc - Beat Cover  Sing About Me Im Dying of Thirst.wav"
   sample kendrick_drums, amp: 3
   sleep 7
 end
-
+beat = [0.5, 0.5, 3, 3, 3]
 define :kendrickmusic do
   use_synth :piano
   play :a, sustain: 3
@@ -61,7 +61,7 @@ define :kendrickmusic do
   play :ds, sustain: 3
   play :fs, sustain: 3
   sleep 1.4
-  play :gs
+   play :gs
   play :gs, sustain: 3
   play :a, sustain: 3
   play :bs, sustain: 3
@@ -71,6 +71,7 @@ define :kendrickmusic do
   play :fs
   sleep 0.4
   play :b
+  sleep 0.4
 end
 
 live_loop :kendrick, delay: 2.5 do
